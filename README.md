@@ -2,7 +2,7 @@
 
 Creating backups of important data is an essential part of any reliable data management system. If you are running a PostgreSQL database and looking for a way to easily back up your data and store it safely, this article will guide you through a simple process for backing up your PostgreSQL database and uploading the backup file into MinIO, an open-source object storage server.
 
-## What is MinIO?
+## [What is MinIO?](https://min.io/)
 
 MinIO is a lightweight and high-performance object storage server that is compatible with Amazon S3 cloud storage service. It can be used to store unstructured data, such as photos, videos, and backup files. You can easily deploy MinIO on your own server and manage your data without relying on a third-party cloud storage service.
 
@@ -11,7 +11,7 @@ MinIO is a lightweight and high-performance object storage server that is compat
 Docker Compose is a popular tool for defining and running multi-container Docker applications. You can use Docker Compose to set up PostgreSQL and MinIO quickly.
 
 Here is an example Docker Compose file that sets up PostgreSQL and MinIO:
-
+* [docker-compose.yaml](https://github.com/ashkangoleh/postgresql-backup-minio-docker-shell-script/blob/main/docker-compose.yaml)
 ```yaml
 version: '3.7'
 services:
@@ -103,7 +103,7 @@ Save this file as backup.sh in the same directory as your docker-compose.yml fil
 ## Step 3: Test the Backup Script
 
 Before setting up a cron job to run the backup script automatically, you should test it to make sure it’s working correctly. To do this, simply run the backup script from the command line:
-
+* [backup.sh](https://github.com/ashkangoleh/postgresql-backup-minio-docker-shell-script/blob/main/backup.sh)
 ```sh
 ~$ ./backup.sh
 ```
