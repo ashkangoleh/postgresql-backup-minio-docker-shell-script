@@ -1,0 +1,1 @@
+# postgresql-backup-minio-docker-shell-script
